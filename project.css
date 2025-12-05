@@ -146,6 +146,7 @@
   height: 50vh;
   display: flex;
   gap: 24px;
+  padding: 24px 10vw;
 }
 
 .performance-image {
@@ -157,7 +158,8 @@
 }
 
 .performance-image > img {
-  max-height: 65%;
+  /* max-height: 65%; */
+  height: 350px;
 }
 
 .performance-description {
@@ -181,12 +183,25 @@
   color: #777;
 }
 
-.button {
+.button-secondary {
+  font-size: 17px;
+  line-height: 20px;
+  width: 150px;
+  height: 50px;
+  border: 2px solid #3eb0f7;
+  background: transparent;
+  transition: all 0.4s;
+  color: #3eb0f7;
+  border-radius: 100px;
 }
 
 @media (max-width: 1200px) {
   .header {
     height: 78vh;
+  }
+
+  .performance-image > img {
+    height: 250px;
   }
 }
 
@@ -210,5 +225,19 @@
   }
   .burger-menu {
     display: inline-block;
+  }
+
+  .performance {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 48px;
+  }
+  .performance-image {
+    justify-content: start;
+    width: 100%;
+  }
+  .performance-image > img {
+    width: 100%;
+    object-fit: cover;
   }
 }
