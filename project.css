@@ -142,6 +142,48 @@
   display: none;
 }
 
+.performance {
+  height: 50vh;
+  display: flex;
+  gap: 24px;
+}
+
+.performance-image {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.248);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.performance-image > img {
+  max-height: 65%;
+}
+
+.performance-description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.performance-description > h3 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #777;
+}
+
+.performance-description > p {
+  height: 100%;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #777;
+}
+
+.button {
+}
+
 @media (max-width: 1200px) {
   .header {
     height: 78vh;
